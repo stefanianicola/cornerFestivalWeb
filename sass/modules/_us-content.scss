@@ -1,0 +1,65 @@
+#usPage {
+	@include respond-to(large) {
+		opacity: 0;
+		visibility: hidden;
+		transform: translateY(100px);
+		-webkit-transform: translateY(100px);
+		-moz-transform: translateY(100px);
+		transition: all .75s;
+		-webkit-transition: all .75s;
+		-moz-transition: all .75s;
+	}
+	&.qa-parallax-active {
+		opacity: 1;
+		visibility: visible;
+		transform: translateY(0);
+		-webkit-transform: translateY(0);
+		-moz-transform: translateY(0);
+	}
+	.qa-us-inner {
+		@include respond-to(medium) {
+			margin: 0 100px;
+		}
+	}
+	.us-item-wrapper {
+		overflow: hidden;
+		margin-top: 30px;
+		@include respond-to(medium) {
+			margin-top: 50px;
+		}
+		.us-item {
+			width: 50%;
+			text-align: center;
+			float: left;
+			padding: 0 15px;
+			margin-bottom: 20px;
+			box-sizing: border-box;
+			img {
+				width: 100%;
+			}
+			span {
+				text-transform: uppercase;
+			    color: $title-black;
+			    display: block;
+			    margin-top: 10px;
+			    line-height: 2;
+			    letter-spacing: 1.2px;
+			    @include respond-to(medium) {
+			    	margin-top: 20px;
+			    }
+			}
+			@include respond-to(medium) {
+				width: 25%;
+				padding: 0 25px;
+			}
+			@include respond-to(normal) {
+				padding: 0 45px;
+			}
+		}
+	}
+	p {
+		@include respond-to(medium) {
+			font-size: 18px;
+		}
+	}
+}

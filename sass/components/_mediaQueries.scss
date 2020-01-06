@@ -1,0 +1,25 @@
+@mixin respond-to($breakpoint:'1px') {
+  @if $breakpoint == "medium" { // for Tablet Portrait
+    @media all and (min-width: $competitive-sm) { // 768
+      @content;
+    }
+  }
+
+  @else if $breakpoint == "normal" { // For Tablet landscape and Small Desktop
+    @media all and (min-width: $competitive-md) { // 992
+      @content;
+    }
+  }
+
+  @else if $breakpoint == "large" { // For desktop
+    @media all and (min-width: $competitive-lg) { // 1025
+      @content;
+    }
+  }
+
+  @else if $breakpoint == "print" { // Only for Print View
+    @media print {
+      @content;
+    }
+  }
+}

@@ -1,0 +1,84 @@
+.qa-form {
+	.qa-text-label {
+		display: block;
+		margin-bottom: 15px;
+		margin-top: 15px;
+		font-size: 15.3px;
+		text-align: left;
+		color: $title-black;
+	}
+	.qa-text-inpt {
+		height: 35px;
+	}
+	.qa-text-area {
+		width: 100%;
+		border: solid 1px #acacac;
+	    padding: 10px;
+	    box-sizing: border-box;
+	}
+	.qa-check {
+		margin-top: 20px;
+		.qa-check-label {
+			font-size: 15.3px;
+			text-align: left;
+			color: $title-black;
+			vertical-align: top;
+			font-weight: 600;
+			cursor: pointer;
+		}
+	}
+	.qa-send-wrapper {
+		text-align: center;
+		margin-top: 50px;
+		margin-bottom: 20px;
+		button {
+		    height: 50px;
+		    padding: 10px 50px;
+		    background: white;
+		    outline: none;
+		    border: 1px solid #acacac;
+		    cursor: pointer;
+		    transition: all .5s;
+		    &:hover {
+		    	color: $white;
+		    	background-color: $title-black;
+		    }
+		}
+	}
+	.qa-message-warning {
+	    padding: 20px;
+	    text-align: center;
+	    color: red;
+	    font-weight: 600;
+	    font-size: 12px;
+	    @include respond-to(medium) {
+	    	font-size: 14px;
+	    }
+	}
+	.qa-message-success {
+	    padding: 20px;
+	    text-align: center;
+	    font-weight: 600;
+	    font-size: 12px;
+	    @include respond-to(medium) {
+	    	font-size: 14px;
+	    }
+	}
+	.qa-message-warning {
+		display: none;
+		span {
+			display: block;
+		}
+	}
+	.qa-message-success {
+		display: none;
+	}
+	.qa-image-loader {
+		opacity: 0;
+		visibility: hidden;
+		&.qa-active {
+			opacity: 1;
+			visibility: visible;
+		}
+	}
+}

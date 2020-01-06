@@ -1,0 +1,26 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+
+@CHARSET "ISO-8859-1";
+@import "compass/reset";
+
+// Components
+@import "components/variables";
+@import "components/mediaQueries";
+@import "components/css3";
+
+// Modules
+@import "modules/general";
+@import "modules/content";
+@import "modules/navigation";
+@import "modules/slide-content";
+@import "modules/us-content";
+@import "modules/form";
+@import "modules/footer";
+
+// Ionicons
+@import "ionicons/ionicons-variables";
+@import "ionicons/ionicons-font";
+@import "ionicons/ionicons-icons";
